@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghibliotheque</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/base/variables.css">
+  <link rel="stylesheet" href="/css/base/reset.css">
+  <link rel="stylesheet" href="/css/layout/header.css">
+  <link rel="stylesheet" href="/css/layout/footer.css">
+  <link rel="stylesheet" href="/css/views/details.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1><a href="/">Ghibliotheque</a></h1>
+      <nav>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/films">Films</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main__details">
+        <figure class="left">
+          <img src="<%= film["image_src"] %>" alt="Affiche du film <%= film["title"] %>">
+        </figure>
+        <article class="right">
+          <h2><%= film["title"] %></h2>
+          <h2><em><%= film["original_title"] %></em></h2>
+          <p>Durée: <em><%= film["duration"] %> minutes</em></p>
+          <p>Année de réalisation: <em><%= film["release_date"] %></em></p>
+          <p>Directeur: <em><%= film["director"] %></em></p>
+          <p><%= film["description"] %></p>
+          <figure>
+            <img src="<%= film["banner_src"] %>" alt="Bannière du film <%= film["title"] %>">
+          </figure>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      By Max &copy; 2024
+    </footer>
+  </div>
+</body>
+</html>

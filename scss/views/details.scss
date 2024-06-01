@@ -1,0 +1,47 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__details {
+    height: 80%;
+    width: 80%;
+    padding: 2rem;
+    gap: 2rem;
+    display: flex;
+    background-color: rgba(var(--fifth-color), 0.1);
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.75);
+    .left {
+      img {
+        border-radius: 5px;
+      }
+    }
+    .right {
+      height: 100%;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        em {
+          font-size: 1.5rem;
+          font-style: italic;
+        }
+      }
+      p {
+        font-size: 1.1rem;
+        em {
+          font-weight: bold;
+        }
+      }
+      figure {
+        height: 50%;
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

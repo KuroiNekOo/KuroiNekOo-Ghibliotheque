@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghibliotheque</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/base/variables.css">
+  <link rel="stylesheet" href="/css/base/reset.css">
+  <link rel="stylesheet" href="/css/components/search-bar.css">
+  <link rel="stylesheet" href="/css/layout/header.css">
+  <link rel="stylesheet" href="/css/layout/footer.css">
+  <link rel="stylesheet" href="/css/views/landing.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1><a href="/">Ghibliotheque</a></h1>
+      <nav>
+        <ul>
+          <li class="selected"><a href="/">Accueil</a></li>
+          <li><a href="/films">Films</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <form method="GET" action="/search" class="form__search">
+        <h2>Explorez les films</h2>
+        <button type="submit">
+          <figure>
+            <img src="/img/loupe-gray.webp" alt="Loupe pour rechercher des films">
+          </figure>
+        </button>
+        <input type="text" name="title" maxlength="60" placeholder="Recherchez un film ici ...">
+        <input type="submit" style="display:none;">
+      </form>
+    </main>
+    <footer class="footer">
+      By Max &copy; 2024
+    </footer>
+  </div>
+</body>
+</html>

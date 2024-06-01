@@ -1,0 +1,20 @@
+{
+  "name": "s03-e09-ghibliotheque-kuroinekoo",
+  "version": "1.0.0",
+  "description": "## Révision S03E07 - Pré-parkour",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w scss:public/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "sass": "^1.71.1"
+  }
+}

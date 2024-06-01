@@ -1,0 +1,79 @@
+.slider__movies {
+  display: none;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.slider__movies article {
+  width: 450px;
+  text-align: center;
+  font-size: 2rem;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+}
+.slider__movies article figure {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.slider__movies article figure img {
+  border-radius: 5px;
+}
+.slider__movies .slide-1 {
+  height: 90%;
+  background-color: unset;
+  transform: translateX(-70%);
+  z-index: 2;
+}
+.slider__movies .slide-2 {
+  height: 100%;
+  background-color: unset;
+  z-index: 3;
+}
+.slider__movies .slide-3 {
+  height: 90%;
+  background-color: unset;
+  transform: translateX(70%);
+  z-index: 2;
+}
+.slider__movies .redirect {
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.slider__movies .redirect:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+}
+.slider__movies .btn {
+  position: absolute;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+  z-index: 5;
+  transition: all 300ms ease-in-out;
+}
+.slider__movies .btn figure {
+  width: 48px;
+  height: 48px;
+  margin: auto;
+}
+.slider__movies .btn figure img {
+  opacity: 0.8;
+}
+.slider__movies .btn:hover {
+  transform: scale(1.1);
+}
+.slider__movies .btn-left {
+  display: none;
+  margin-right: 1200px;
+}
+.slider__movies .btn-right {
+  display: none;
+  margin-left: 1200px;
+}
+
+/*# sourceMappingURL=slider-movies.css.map */

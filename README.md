@@ -1,1 +1,0 @@
-# KuroiNekOo-Ghibliotheque
